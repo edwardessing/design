@@ -62,7 +62,7 @@ h2 {
 	font-size: 18px;
 	letter-spacing: 1px;
 	color: black;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 h3 {

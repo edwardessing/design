@@ -14,7 +14,7 @@ section.work.pure-g
 				//- //- if post has link
 				//- if public.work._data.link
 				a(href= link target='_blank') Link
-					img.svg.ext-link(src="http://upload.wikimedia.org/wikipedia/commons/d/d9/VisualEditor_-_Icon_-_External-link.svg");
+					img.svg.ext-link(src='/assets/img/link.svg');
 	.data.pure-u-1.pure-u-md-7-8
 		p.info= info
 	//- .hero.pure-u-1-4.pure-u-md-1-4
@@ -22,4 +22,4 @@ section.work.pure-g
 
 	.gallery
 		!= yield
-	!= partial("../_partials/post-nav")
+	!= partial('../_partials/post-nav')

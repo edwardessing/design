@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>user friendly</title>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="user friendly">
+    <meta name="apple-mobile-web-app-title" content="user friendly">
+    <meta name="keywords" content="user friendly">
+    <meta name="author" content="ED/ES">
+
+    <link href="<?php echo get_template_directory_uri(); ?>/img/icons/ms_favicon_blank.ico?v=2" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Karla:700' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/marquee.js"></script>
+</head>
+
+<body>
+
+<!-- menu -->
+        <div id="menu">
+            <div class="link">
+                <span><h2>menu</h2></span>
+            </div>
+
+            <div class="dropdown">
+                <h2>controls</h2>
+                <div class="but">
+					<button id="btn-start" value="Submit">start/stop</button>
+<!--
+					<button id="btn-incr" value="Submit">incr</button>
+					<button id="btn-decr" value="Submit">decr</button>
+-->
+					<br>
+					<button class="but-position" value="stray" onclick="Enabled=true;RunMyFunction();">stray</button>
+					<button class="but-order" value="order" onclick="Enabled=false;RunMyFunction();">order</button>
+					<button class="but-drop">invert</button>
+                    <button class="but-z">z</button>
+					<br>
+					<button id="btn-zoom-in" value="Submit">+</button>
+					<button id="btn-zoom-out" value="Submit">-</button>
+					<button id="btn-zoom-fix" value="Submit">+/-</button> 
+					<br>
+					<button id="btn-about" value="Submit">about</button> 
+					<a href="http://edwardessing.com/" target="_blank">+ 2014 edwardessing.com</a>
+				</div>
+
+            </div>
+        </div>
+<!-- menu end -->
+
+<!-- content -->
+
+<div id="stats">
+	<div class="overlay"></div>
+<div class="intro">
+    <h1><span class="t1">user</span><span class="t2">friendly</span></h1>
+<hr>
+    <p>USERFRIENDLY is a compact, interactive and responsive web experiment. Using only HTML and Javascript, USERFRIENDLY provides a simple animated experience. Users may zoom, invert and reorganise the flow of moving ordnance.The demand for data compression has defined a middle ground between quick load times and engaging content. USERFRIENDLY comes at a total size below 300KB - which is roughly equivalent to the size of a static landing page image.</p>
+<hr>
+    
+    <button id="btn-data" value="Submit">data</button> 
+
+</div>
+
+<table class="tg">
+  <tr class="data-sect">
+    <th class="tg-e3zv">name</th>
+    <th class="tg-e3zv">type</th>
+    <th class="tg-e3zv">purpose</th>
+    <th class="tg-e3zv">length</th>
+    <th class="tg-e3zv">weight</th>
+    <th class="tg-e3zv">diameter</th>
+    <th class="tg-e3zv">engine</th>
+    <th class="tg-e3zv">warhead</th>
+    <th class="tg-e3zv">guidance system</th>
+    <th class="tg-e3zv">speed</th>
+    <th class="tg-e3zv">operational range</th>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">brahmos</td>
+    <td class="tg-031e">supersonic cruise missile</td>
+    <td class="tg-031e">multipurpose</td>
+    <td class="tg-031e">8.4 m</td>
+    <td class="tg-031e">3000 kg</td>
+    <td class="tg-031e">0.6 m</td>
+    <td class="tg-031e">first stage: solid propellant booster second stage: liquid-fueled ramjet</td>
+    <td class="tg-031e">conventional semi-armour-piercing and nuclear</td>
+    <td class="tg-031e">mid-course guidance by INS/terminal guidance by homing radar seeker/augmentation by GPS/GLONASS</td>
+    <td class="tg-031e">3400 km/h</td>
+    <td class="tg-031e">300~500 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">kh-59m</td>
+    <td class="tg-031e">airborne guided missile</td>
+    <td class="tg-031e">multipurpose</td>
+    <td class="tg-031e">5.7 m</td>
+    <td class="tg-031e">930 kg</td>
+    <td class="tg-031e">0.38 m</td>
+    <td class="tg-031e">powder-fuel engine with powder-fuel accelerator</td>
+    <td class="tg-031e">penetrating.combat</td>
+    <td class="tg-031e">TV-guided and inertial navigation</td>
+    <td class="tg-031e">1000 km/h</td>
+    <td class="tg-031e">285 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">kh-31a</td>
+    <td class="tg-031e">medium-range air-to-surface missile</td>
+    <td class="tg-031e">anti-ship</td>
+    <td class="tg-031e">4.9 m</td>
+    <td class="tg-031e">610 kg</td>
+    <td class="tg-031e">0.36 m</td>
+    <td class="tg-031e">solid fuel rocket in initial stage and ramjet for rest of trajectory</td>
+    <td class="tg-031e">HE shaped charge</td>
+    <td class="tg-031e">inertial with active radar</td>
+    <td class="tg-031e">2300 km/h</td>
+    <td class="tg-031e">25~50 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">kab-1500kr</td>
+    <td class="tg-031e">guided and corrected air bomb</td>
+    <td class="tg-031e">smart bomb</td>
+    <td class="tg-031e">4.6 m</td>
+    <td class="tg-031e">560 kg</td>
+    <td class="tg-031e">0.58 m</td>
+    <td class="tg-031e">n/a</td>
+    <td class="tg-031e">penetrating/HE/full-air explosive</td>
+    <td class="tg-031e">electro-optical TV-guided fire-and-forget</td>
+    <td class="tg-031e">600 km/h</td>
+    <td class="tg-031e">17 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">kab-500kr</td>
+    <td class="tg-031e">guided and corrected air bomb</td>
+    <td class="tg-031e">smart bomb</td>
+    <td class="tg-031e">3.1 m</td>
+    <td class="tg-031e">520 kg</td>
+    <td class="tg-031e">0.35 m</td>
+    <td class="tg-031e">n/a</td>
+    <td class="tg-031e">armour-piercing</td>
+    <td class="tg-031e">electro-optical TV-guided fire-and-forget</td>
+    <td class="tg-031e">800 km/h</td>
+    <td class="tg-031e">17 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">kh-29t</td>
+    <td class="tg-031e">air-to-surface missile</td>
+    <td class="tg-031e">multipurpose</td>
+    <td class="tg-031e">3.9 m</td>
+    <td class="tg-031e">685 kg</td>
+    <td class="tg-031e">0.38 m</td>
+    <td class="tg-031e">fixed thrust solid fuel rocket</td>
+    <td class="tg-031e">HE armour-piercing</td>
+    <td class="tg-031e">passive TV guided</td>
+    <td class="tg-031e">1500 km/h</td>
+    <td class="tg-031e">12 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">ks-172/k-100</td>
+    <td class="tg-031e">long range air-to-air missile</td>
+    <td class="tg-031e">air-to-air</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">748 kg</td>
+    <td class="tg-031e">0.4 m</td>
+    <td class="tg-031e">solid-propellant tandem rocket booster</td>
+    <td class="tg-031e">HE fragmentation</td>
+    <td class="tg-031e">inertial navigation with midcourse guidance and active radar for terminal homing</td>
+    <td class="tg-031e">4000 km/h</td>
+    <td class="tg-031e">200 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">rvv-ae/r-77</td>
+    <td class="tg-031e">medium-range active-radar homing air-to-air missile</td>
+    <td class="tg-031e">air-to-air</td>
+    <td class="tg-031e">3.6 m</td>
+    <td class="tg-031e">175 kg</td>
+    <td class="tg-031e">0.2 m</td>
+    <td class="tg-031e">solid fuel rocket motor</td>
+    <td class="tg-031e">HE fragmentation</td>
+    <td class="tg-031e">inertial with mid-course update and terminal active radar homing</td>
+    <td class="tg-031e">5500 km/h</td>
+    <td class="tg-031e">40 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">r-27er</td>
+    <td class="tg-031e">medium-range, air-to-air tactical missile</td>
+    <td class="tg-031e">air-to-air</td>
+    <td class="tg-031e">4.1 m</td>
+    <td class="tg-031e">253 kg</td>
+    <td class="tg-031e">0.23 m</td>
+    <td class="tg-031e">high performance, with directed-rocket motor solid-fuel rocket motor</td>
+    <td class="tg-031e">blast/fragmentation, or continuous rod</td>
+    <td class="tg-031e">semi-active radar homing (A/C), infrared (B/D), passive radar (E/F)</td>
+    <td class="tg-031e">5500 km/h</td>
+    <td class="tg-031e">up to 130 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">r-27r</td>
+    <td class="tg-031e">medium-range, air-to-air tactical missile</td>
+    <td class="tg-031e">air-to-air</td>
+    <td class="tg-031e">4 m</td>
+    <td class="tg-031e">&lt; 253 kg</td>
+    <td class="tg-031e">0.23 m</td>
+    <td class="tg-031e">high performance, with directed-rocket motor solid-fuel rocket motor</td>
+    <td class="tg-031e">blast/fragmentation, or continuous rod</td>
+    <td class="tg-031e">semi-active radar homing (A/C), infrared (B/D), passive radar (E/F)</td>
+    <td class="tg-031e">5500 km/h</td>
+    <td class="tg-031e">up to 80 km</td>
+  </tr>
+  <tr>
+    <td class="tg-e3zv">r-73</td>
+    <td class="tg-031e">short-range air-to-air missile</td>
+    <td class="tg-031e">air-to-air</td>
+    <td class="tg-031e">2.9 m</td>
+    <td class="tg-031e">105 kg</td>
+    <td class="tg-031e">0.17 m</td>
+    <td class="tg-031e">solid-fuel rocket engine</td>
+    <td class="tg-031e">HE expanding rod warhead</td>
+    <td class="tg-031e">All-aspect infrared homing</td>
+    <td class="tg-031e">3000 km/h</td>
+    <td class="tg-031e">20~30 km</td>
+  </tr>
+</table>
+
+</div>
+
+<!-- content end -->
+
+<!-- marquee -->
+    
+    <div class="row-1">
+        <div class="marquee" data-duration=6000 style='position:absolute; height:100%;'>
+            <img src=img/1.png>
+        </div>
+        <div class="marquee" data-duration=8000 style='position:absolute; height:100%;'>
+            <img src=img/2.png>
+        </div>
+        <div class="marquee" data-duration=6700 style='position:absolute; height:100%;'>
+            <img src=img/3.png>
+        </div>
+        <div class="marquee" data-duration=8400 style='position:absolute; height:100%;'>
+            <img src=img/4.png>
+        </div>
+        <div class="marquee" data-duration=8200 style='position:absolute; height:100%;'>
+            <img src=img/5.png>
+        </div>
+        <div class="marquee" data-duration=7500 style='position:absolute; height:100%;'>
+            <img src=img/6.png>
+        </div>
+        <div class="marquee" data-duration=5000 style='position:absolute; height:100%;'>
+            <img src=img/7.png>
+        </div>
+        <div class="marquee" data-duration=3000 style='position:absolute; height:100%;'>
+            <img src=img/8.png>
+        </div>
+        <div class="marquee" data-duration=3500 style='position:absolute; height:100%;'>
+            <img src=img/9.png>
+        </div>
+        <div class="marquee" data-duration=3250 style='position:absolute; height:100%;'>
+            <img src=img/10.png>
+        </div>
+        <div class="marquee" data-duration=8700 style='position:absolute; height:100%;'>
+            <img src=img/11.png>
+        </div>
+    </div>
+    
+<!-- marquee end -->
+
+</body>
+
+</html>
+
+<script>
+</script>

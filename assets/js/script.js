@@ -15,12 +15,23 @@ $(document).ready(function() {
 		}
 	});
 
+	var link = $('.link');
+	var list = $('.dropdown');
+
+	link.click(function () {
+		list.toggleClass('active');
+		if (list.hasClass('active') === true) {
+			$('.link').addClass('link-bg');
+		} else {
+			$('.link').removeClass('link-bg');
+		}
+	});
+
 	$(document).mouseup(function (e) {
-		var box = $('.dropdown, .link');
+		var box = $('.dropdown');
 		if (!box.is(e.target) // if the target of the click isn't the container...
 			&& box.has(e.target).length === 0) // ... nor a descendant of the container
 			{
-				$('.link').removeClass('rotate');
 				box.removeClass('active');
 			}
 	});
@@ -59,8 +70,5 @@ $(document).ready(function() {
 			}, 'xml');
 
 		});
-
-/* lightbox */
-	$('.hello').swipebox();
 
 });

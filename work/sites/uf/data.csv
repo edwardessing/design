@@ -1,0 +1,16 @@
+name,type,purpose,length,weight,diameter,engine,warhead,guidance system,speed,operational range
+brahmos,supersonic cruise missile,multipurpose,8.4 m,3000 kg,0.6 m,"first stage: solid propellant booster
+ second stage: liquid-fueled ramjet",conventional semi-armour-piercing and nuclear,mid-course guidance by INS/terminal guidance by homing radar seeker/augmentation by GPS/GLONASS,3400 km/h,300~500 km
+kh-59m,airborne guided missile,multipurpose,5.7 m,930 kg,0.38 m,powder-fuel engine with powder-fuel accelerator,penetrating.combat,TV-guided and inertial navigation,1000 km/h,285 km
+kh-31a,medium-range air-to-surface missile,anti-ship,"mod 1 : 4.7 m
+ mod 2 (AD/PD) : 5.3 m",610 kg,0.36 m,solid fuel rocket in initial stage and ramjet for rest of trajectory,HE shaped charge,inertial with active radar,2300 km/h,25~50 km
+kab-1500kr,guided and corrected air bomb,smart bomb,4.6 m,560 kg,0.58 m,n/a,penetrating/HE/full-air explosive,electro-optical TV-guided fire-and-forget,600 km/h,17 km
+kab-500kr,guided and corrected air bomb,smart bomb,3.1 m,520 kg,0.35 m,n/a,armour-piercing,electro-optical TV-guided fire-and-forget,800 km/h,17 km
+kh-29t,air-to-surface missile,multipurpose,3.9 m,685 kg,0.38 m,fixed thrust solid fuel rocket,HE armour-piercing,passive TV guided,1500 km/h,12 km
+ks-172/k-100,long range air-to-air missile,air-to-air,,748 kg,0.4 m,solid-propellant tandem rocket booster,HE fragmentation,inertial navigation with midcourse guidance and active radar for terminal homing,4000 km/h,200 km
+rvv-ae/r-77,medium-range active-radar homing air-to-air missile,air-to-air,3.6 m,175 kg,0.2 m,solid fuel rocket motor,HE fragmentation,inertial with mid-course update and terminal active radar homing,5500 km/h,40 km
+r-27er,"medium-range, air-to-air tactical missile",air-to-air,4.1 m,253 kg,0.23 m,"high performance, with directed-rocket motor
+ solid-fuel rocket motor","blast/fragmentation, or continuous rod","semi-active radar homing (A/C), infrared (B/D), passive radar (E/F)",5500 km/h,up to 130 km
+r-27r,"medium-range, air-to-air tactical missile",air-to-air,4 m,< 253 kg,0.23 m,"high performance, with directed-rocket motor
+ solid-fuel rocket motor","blast/fragmentation, or continuous rod","semi-active radar homing (A/C), infrared (B/D), passive radar (E/F)",5500 km/h,up to 80 km
+r-73,short-range air-to-air missile,air-to-air,2.9 m,105 kg,0.17 m,solid-fuel rocket engine,HE expanding rod warhead,All-aspect infrared homing,3000 km/h,20~30 km
