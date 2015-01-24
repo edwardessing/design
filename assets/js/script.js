@@ -9,9 +9,9 @@ $(document).ready(function() {
 	$('.link').click(function () {
 		$('.dropdown').toggleClass( 'active' );
 		if ($('.dropdown').hasClass('active') === true) {
-			$('.link').toggleClass('link-bg');
+			$('.link').addClass('link-bg');
 		} else {
-			// $('.link').css('color','black');
+			$('.link').removeClass('link-bg');
 		}
 	});
 

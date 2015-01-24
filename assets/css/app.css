@@ -62,6 +62,7 @@ h2 {
 	font-size: 18px;
 	letter-spacing: 1px;
 	color: black;
+	text-transform: uppercase;
 }
 
 h3 {
@@ -144,7 +145,6 @@ body {
 		border-bottom: 1px solid;
 		border-left: 1px solid;
 		border-color: inherit;
-
 	}
 
 .rotate {
