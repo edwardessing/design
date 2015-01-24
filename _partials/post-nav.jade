@@ -1,0 +1,35 @@
+work = []
+for post, slug in public.work._data
+	if post.id
+		- post.slug = slug
+		- work.push(public.work._data[slug])
+
+//- Iterate over the blog array
+each post, i in work.sort(function(a,b){ a = new Date(a.id); b = new Date(b.id); return b>a?-1:b<a?1:0; }).slice(0, postlimit)
+	//- post slug is the old object key that matched the file name,
+	//- Like "a-post" for example
+	//- Match it against the current page
+	if post.slug == current.source
+			//- Previous is one before this array item
+			//- Next is one after
+			//- Variables make it easy to template
+			- prev = work[i + 1]
+			- next = work[i - 1]
+			//- The actual links
+			.pure-g.post-nav
+				.pure-u-1-3.prev
+					if prev
+						a(href="#{ prev.slug }", title="#{ prev.title }")
+							span ←
+							span= prev.title
+							//- span #{ prev.title }
+					
+				.pure-u-1-3.return
+					a(href='/index') 
+						span ↩ home
+				.pure-u-1-3.next
+					if next
+						a(href="#{ next.slug }", title="#{ next.title }")
+							span= next.title
+							span →
+							//- span #{ next.title }

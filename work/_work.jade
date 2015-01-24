@@ -1,0 +1,25 @@
+section.work.pure-g
+	.pure-u-1-1
+		h1.post-head
+			a(href='/index') 
+				span ↩
+			= title
+	.data.pure-u-1.pure-u-md-1-8
+		ul
+			li
+				h2= date
+			li
+				h2= tag
+			li.site-link
+				//- //- if post has link
+				//- if public.work._data.link
+				a(href= link target='_blank') Link
+					img.svg.ext-link(src="http://upload.wikimedia.org/wikipedia/commons/d/d9/VisualEditor_-_Icon_-_External-link.svg");
+	.data.pure-u-1.pure-u-md-7-8
+		p.info= info
+	//- .hero.pure-u-1-4.pure-u-md-1-4
+		//- img(src='img/#{ hero }', alt=name)
+
+	.gallery
+		!= yield
+	!= partial("../_partials/post-nav")
