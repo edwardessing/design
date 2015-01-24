@@ -59,7 +59,7 @@ h1 {
 }
 
 h2 {
-	font-size: 18px; 
+	font-size: 18px;
 	letter-spacing: 1px;
 	color: black;
 }
@@ -89,12 +89,12 @@ h6 {
 html, body {
 	/*background: rgb(220,120,60);*/
 	background: rgb(185, 185, 175);
-	height: 100%; 
+	height: 100%;
 	margin: 0;
-	padding: 0;   
+	padding: 0;
 }
 
-body {  
+body {
 	font-size: 100%;
 }
 
@@ -136,6 +136,15 @@ body {
 		border-bottom: 1px solid;
 		border-left: 1px solid;
 		border-color: inherit;
+	}
+
+	.link-bg {
+		background: white;
+		color: rgb(185, 185, 175);
+		border-bottom: 1px solid;
+		border-left: 1px solid;
+		border-color: inherit;
+
 	}
 
 .rotate {
@@ -378,9 +387,9 @@ article {
 	}
 
 table {
-	width: 100%; 
+	width: 100%;
 	margin-top: 10px;
-	border-collapse: collapse; 
+	border-collapse: collapse;
 }
 
 .table-title, .row-title {
@@ -394,8 +403,8 @@ table {
 	border-spacing:0;
 }
 
-tr { 
-	padding: 10px 0; 
+tr {
+	padding: 10px 0;
 	color: black;
 	border-bottom: solid 1px rgba(0,0,0,0.1);
 	margin: -1px 0;
@@ -411,29 +420,30 @@ tr {
 	}
 		td a {
 			text-decoration: none;
+			color: white;
 		}
 		td a:hover {
-			color: white;
+			color: black;
 		}
 
 @media screen and (max-width: 800px) {
-	table, thead, tbody, th, td, tr { 
+	table, thead, tbody, th, td, tr {
 		display: block;
 	}
-	thead tr { 
+	thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	td:before { 
+	td:before {
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
-		padding-right: 10px; 
+		padding-right: 10px;
 		white-space: nowrap;
-		text-align: left; 
+		text-align: left;
 	}
 	.table-title, .row-title {
 		padding-left: 0;
@@ -449,7 +459,7 @@ tr {
 	.dropdown {
 		width: 100%;
 	}
-	
+
 	.img-area * img {
 		max-width: 40%;
 		margin: 20% auto;
@@ -458,5 +468,9 @@ tr {
 
 	.gallery img {
 		width: 100%;
+	}
+
+	td {
+		padding: 0;
 	}
 }

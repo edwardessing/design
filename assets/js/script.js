@@ -1,4 +1,4 @@
-$(document).ready(function() {  
+$(document).ready(function() {
 
 /* signature */
 	if (typeof console !== 'undefined') {
@@ -8,8 +8,13 @@ $(document).ready(function() {
 /* menu */
 	$('.link').click(function () {
 		$('.dropdown').toggleClass( 'active' );
+		if ($('.dropdown').hasClass('active') === true) {
+			$('.link').toggleClass('link-bg');
+		} else {
+			// $('.link').css('color','black');
+		}
 	});
-	
+
 	$(document).mouseup(function (e) {
 		var box = $('.dropdown, .link');
 		if (!box.is(e.target) // if the target of the click isn't the container...
