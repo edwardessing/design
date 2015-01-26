@@ -165,6 +165,7 @@ body {
 	right: 0;
 	z-index: 999;
 	overflow: scroll;
+	box-shadow: 0 35px 150px rgba(0,0,0,0.45);
 }
 
 	.dropdown > div {

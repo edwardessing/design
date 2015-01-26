@@ -22,11 +22,11 @@ html(lang='en')
 		.container
 			if current.path[0] === "index"
 				.pure-g.home-thumbs
-					.pure-u-1-1.pure-u-md-1-2.bio
+					.pure-u-1-1.pure-u-sm-2-3.pure-u-md-1-2.bio
 						h1 Edward Essing
 					for post, slug in public.work._data
 						if post.layout !== false
-							a(href="/work/#{ slug }").pure-u-1-1.pure-u-md-1-4.home-thumb(style='background-image: url(/work/img/#{ img= post.hero })')
+							a(href="/work/#{ slug }").pure-u-1-1.pure-u-sm-1-3.pure-u-md-1-4.home-thumb(style='background-image: url(/work/img/#{ img= post.hero })')
 				!= yield
 			else
 				if current.path[0] === "work"
