@@ -420,10 +420,10 @@ tr {
 	}
 		td a {
 			text-decoration: none;
-			color: white;
+			color: white !important;
 		}
 		td a:hover {
-			color: black;
+			color: black !important;
 		}
 
 @media screen and (max-width: 800px) {

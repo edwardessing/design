@@ -5,7 +5,8 @@
 		"date": "2014",
 		"tag": "digital",
 		"info": "Skylight is a powerful, lightweight and interactive web experiment. The site was built from scratch and without any frameworks. Users are literally immersed in a gorgeous, full-screen, looped animation. There are several interactive touch points - including the ability to reposition your field-of-view, toggle the stylised HUD and select from a range of different backdrops.",
-		"hero": "sl/icon.jpg"
+		"hero": "sl/icon.jpg",
+		"link": "https://edwardessing.com/work/sites/sl/index"
 	},
 	"kas": {
 		"id": "9",
@@ -22,7 +23,8 @@
 		"date": "2014",
 		"tag": "digital",
 		"info": "USERFRIENDLY is a compact, interactive and responsive web experiment. Using only HTML, CSS and Javascript, USERFRIENDLY provides a simple animated experience. Users may zoom, invert and reorganise the flow of moving ordnance.The demand for data compression has defined a middle ground between quick load times and engaging content. USERFRIENDLY comes at a total size below 300KB – which is roughly equivalent to the size of a static landing page image.",
-		"hero": "uf/icon.jpg"
+		"hero": "uf/icon.jpg",
+		"link": "https://edwardessing.com/work/sites/uf/index"
 	},
 	"ms": {
 		"id": "7",
@@ -30,15 +32,17 @@
 		"date": "2014",
 		"tag": "digital",
 		"info": "Minette Shuen is a fashion designer from Sydney, Australia. Designed and developed.",
-		"hero": "ms/icon.jpg"
+		"hero": "ms/icon.jpg",
+		"link": "http://minetteshuen.com/"
 	},
 	"rf": {
 		"id": "6",
 		"title": "reframe",
 		"date": "2014",
 		"tag": "digital",
-		"info": "In early 2014 I was playing around with simple silhouettes and architectural shapes inspired by some of my photographs. In exploring the graphic possibilities of the images I created a streamlined, easily repeated process. First, I would select a photograph characterised by strong architectural form. I then extracted this element and reshaped it into something wholly unique. Consquently the viewer is presented with a free-form, digitised statue - unrestrained by limitations of landscape or weight. Tied to the experiential nature of the images, I sought a text component to compliment and fully realise what I was making -  focusing on architecture and philosophy. Architecture was an obvious choice. At this point I was questioning how exactly I had ended up with the images: what had driven me to create them? Self-awareness of my loose meditations brought me to philosophy. Through this process I was introduced to architecture inspired by phenomenology.",
-		"hero": "rf/icon.jpg"
+		"info": "Beyond the physicality of architectural objects and practicalities of programmatic content, enmeshed experience is not merely a place of events, things and activities, but something more intangible, which emerges from the continuous unfolding of overlapping spaces, materials and details.",
+		"hero": "rf/icon.jpg",
+		"link": "https://edwardessing.com/work/sites/rf/index"
 	},
 	"saj": {
 		"id": "5",
@@ -46,7 +50,8 @@
 		"date": "2014",
 		"tag": "digital",
 		"info": "When you’re living in the same city for ten years, your surroundings become so familiar that the ability to find inspiration in everyday life is desensitised. For a while I was content with the visual wealth of the internet, but after some reflection I realised that digital exposure could not substitute for a real environment. I’m not sure if I was fully aware of this at the time of my exchange application, but I felt at least intuitively I needed a change…",
-		"hero": "saj/icon.jpg"
+		"hero": "saj/icon.jpg",
+		"link": "https://edwardessing.com/work/sites/saj/index"
 	},
 	"ls": {
 		"id": "4",
@@ -62,7 +67,8 @@
 		"date": "2013",
 		"tag": "digital",
 		"info": "Imitating reality with the use of digital technologies – in order to enhance the realism of a virtual experience. Through the use of an interactive and multi-layered parallax system I aimed to examine the interactions of architecture and its surrounding environment. This is a single scroll webpage. Wait 5-10 seconds to load and simply scroll down to experience the site.",
-		"hero": "coe/icon.jpg"
+		"hero": "coe/icon.jpg",
+		"link": "https://edwardessing.com/work/sites/coe/index"
 	},
 	"cota": {
 		"id": "2",
