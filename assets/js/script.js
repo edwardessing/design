@@ -6,14 +6,14 @@ $(document).ready(function() {
 	}
 
 /* menu */
-	$('.link').click(function () {
-		$('.dropdown').toggleClass( 'active' );
-		if ($('.dropdown').hasClass('active') === true) {
-			$('.link').addClass('link-bg');
-		} else {
-			$('.link').removeClass('link-bg');
-		}
-	});
+	// $('.link').click(function () {
+	// 	$('.dropdown').toggleClass( 'active' );
+	// 	if ($('.dropdown').hasClass('active') === true) {
+	// 		$('.link').addClass('link-bg');
+	// 	} else {
+	// 		$('.link').removeClass('link-bg');
+	// 	}
+	// });
 
 	var link = $('.link');
 	var list = $('.dropdown');
