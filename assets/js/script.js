@@ -6,32 +6,20 @@ $(document).ready(function() {
 	}
 
 /* menu */
-	// $('.link').click(function () {
-	// 	$('.dropdown').toggleClass( 'active' );
-	// 	if ($('.dropdown').hasClass('active') === true) {
-	// 		$('.link').addClass('link-bg');
-	// 	} else {
-	// 		$('.link').removeClass('link-bg');
-	// 	}
-	// });
-
 	var link = $('.link');
 	var list = $('.dropdown');
 
 	link.click(function () {
+		link.toggleClass('link-bg');
 		list.toggleClass('active');
-		if (list.hasClass('active') === true) {
-			$('.link').addClass('link-bg');
-		} else {
-			$('.link').removeClass('link-bg');
-		}
 	});
 
 	$(document).mouseup(function (e) {
-		var box = $('.dropdown');
+		var box = $('.dropdown, .link');
 		if (!box.is(e.target) // if the target of the click isn't the container...
 			&& box.has(e.target).length === 0) // ... nor a descendant of the container
 			{
+				$('.link').removeClass('link-bg');
 				box.removeClass('active');
 			}
 	});
