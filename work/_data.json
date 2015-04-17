@@ -1,4 +1,13 @@
 {
+	"fc": {
+		"id": "11",
+		"title": "floating cages",
+		"date": "2015",
+		"tag": "digital",
+		"info": "Simplified and interactive digital environments making use of unconventional patterns, layering and transparency.",
+		"hero": "fc/icon.jpg",
+		"link": "https://edwardessing.com/work/sites/fc/index"
+	},
 	"sl": {
 		"id": "10",
 		"title": "skylight",
