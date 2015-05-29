@@ -1,4 +1,13 @@
 {
+	"hul": {
+		"id": "13",
+		"title": "hulsbosch",
+		"date": "2015",
+		"tag": "mixed",
+		"info": "'Hulsbosch is an independently owned, independently run Australian branding and design agency with over 32 years of experience.' As part of my internship at Hulsbosch I worked on several client and internal projects - including a client gift card series (pictured).",
+		"hero": "hul/icon.jpg",
+		"link": "http://www.hulsbosch.com.au/"
+	},
 	"fl": {
 		"id": "12",
 		"title": "faults",
