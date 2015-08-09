@@ -11,9 +11,12 @@ section.work.pure-g
 			li
 				h2= tag
 
-			li.site-link
-				a(href= link target='_blank') =link
-					img.svg.ext-link(src='/assets/img/link.svg');
+			if _data.link
+				li.site-link
+					a(href= link target='_blank') Link
+						img.svg.ext-link(src='/assets/img/link.svg');
+			else
+				p
 
 	.data.pure-u-1.pure-u-md-7-8
 		p.info= info
