@@ -10,9 +10,10 @@ section.work.pure-g
 				h2= date
 			li
 				h2= tag
-			//- li.site-link
-			//- 	a(href= link target='_blank') Link
-			//- 		img.svg.ext-link(src='/assets/img/link.svg');
+
+			li.site-link
+				a(href= link target='_blank') =link
+					img.svg.ext-link(src='/assets/img/link.svg');
 
 	.data.pure-u-1.pure-u-md-7-8
 		p.info= info
