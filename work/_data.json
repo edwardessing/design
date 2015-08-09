@@ -78,15 +78,15 @@
 		"hero": "rf/icon.jpg",
 		"link": "https://edwardessing.com/work/sites/rf/intro"
 	},
-	"saj": {
-		"id": "5",
-		"title": "study abroad journal",
-		"date": "2014",
-		"tag": "digital",
-		"info": "When you’re living in the same city for ten years, your surroundings become so familiar that the ability to find inspiration in everyday life is desensitised. For a while I was content with the visual wealth of the internet, but after some reflection I realised that digital exposure could not substitute for a real environment. I’m not sure if I was fully aware of this at the time of my exchange application, but I felt at least intuitively I needed a change…",
-		"hero": "saj/icon.jpg",
-		"link": "https://edwardessing.com/work/sites/saj/intro"
-	},
+	// "saj": {
+	// 	"id": "5",
+	// 	"title": "study abroad journal",
+	// 	"date": "2014",
+	// 	"tag": "digital",
+	// 	"info": "When you’re living in the same city for ten years, your surroundings become so familiar that the ability to find inspiration in everyday life is desensitised. For a while I was content with the visual wealth of the internet, but after some reflection I realised that digital exposure could not substitute for a real environment. I’m not sure if I was fully aware of this at the time of my exchange application, but I felt at least intuitively I needed a change…",
+	// 	"hero": "saj/icon.jpg",
+	// 	"link": "https://edwardessing.com/work/sites/saj/intro"
+	// },
 	"ls": {
 		"id": "4",
 		"title": "the lone star",
