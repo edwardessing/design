@@ -17,7 +17,7 @@ html(lang='en')
 
 	body(class="#{ current.path.join('-') }")
 		!= partial("_partials/nav")
-		main.container
+		#main.container
 			if current.path[0] === "index"
 				.row.home-thumbs
 					.col-sm-12.col-md-6.bio
@@ -36,5 +36,6 @@ html(lang='en')
 				!= partial("_partials/footer")
 
 		script(src="/assets/js/jquery.min.js")
+		script(src="/assets/js/bootstrap-3.2.0.min.js")
 		script(src="/assets/js/script.js")
 		
