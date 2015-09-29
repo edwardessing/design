@@ -86,6 +86,12 @@ h4 {
 
 /** main **/
 
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+    overflow: auto;
+}
+
 html, body {
 	background: rgb(185, 185, 175);
 	height: 100%;
@@ -137,10 +143,6 @@ article {
 }
 
 .container {
-	position: relative;
-	max-width: 1140px;
-	margin: 5% auto;
-	padding: 20px;
 	color: white;
 	z-index: 9;
 }
@@ -318,9 +320,7 @@ td {
 		left: -9999px;
 	}
 	td:before {
-		/* Now like a table header */
 		position: absolute;
-		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
 		padding-right: 10px;

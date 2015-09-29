@@ -38,19 +38,3 @@ $lg: "screen and (min-width : 1600px)";
 
 /***********************/
 /*/ site animations /*/
-
-@include keyframe(bounce) {
-	0%, 25%, 50%, 75%, 100% {
-	transform: translate(0, 0);
-  }
-	40% {
-	transform: translate(0, -20px);
-  }
-	60% {
-	transform: translate(0, -10px);
-  }
-}
-
-.bounce {
-	@include animation (bounce 2s infinite);
-}
