@@ -104,6 +104,9 @@ body {
 
 	main.container {
 		max-width: 1200px;
+		margin-top: 5%;
+		color: white;
+		z-index: 9;
 	}
 }
 
@@ -140,11 +143,6 @@ body {
 
 article {
 	min-height: 100%;
-}
-
-.container {
-	color: white;
-	z-index: 9;
 }
 
 /* home */
