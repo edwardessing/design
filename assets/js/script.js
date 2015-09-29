@@ -24,8 +24,8 @@ $(document).ready(function() {
 			}
 	});
 
-	$('.gallery p').addClass('pure-g');
-	$('.gallery p img').wrap('<div class="pure-u-1 pure-u-md-1-2" />');
+	$('.gallery p').addClass('row');
+	$('.gallery p img').wrap('<div class="col-xs-12 col-sm-6" />');
 	// $('.gallery p img').addClass('pure-u-1');
 
 
@@ -58,5 +58,5 @@ $(document).ready(function() {
 			}, 'xml');
 
 		});
-
+	
 });
