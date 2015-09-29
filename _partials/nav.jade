@@ -1,10 +1,9 @@
-.pure-g.menu-link
-	.pure-u-1
-		#menu
-			a.link
-			.dropdown
-				ul.post-list.pure-g
-					for post, slug in public.work._data
-						li.list-link.pure-u-1(class="#{ current.source == '/work/' ? 'active-text' : '' }")
-							a(href="/work/#{ slug }")= post.title
-						!= partial("work/" + slug)
+.menu-link
+	#menu
+		a.link
+		.dropdown
+			ul.post-list
+				for post, slug in public.work._data
+					li.list-link(class="#{ current.source == '/work/' ? 'active-text' : '' }")
+						a(href="/work/#{ slug }")= post.title
+					!= partial("work/" + slug)
