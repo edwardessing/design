@@ -236,7 +236,7 @@ article {
 .post-nav {
 	// display: inline-block;
 	// width: 100%;
-	padding: 20px 0 0 0;
+	padding: 40px 0 0 0;
 	
 	a {
 		display: block;
@@ -307,49 +307,40 @@ td {
 	}
 }
 
-@media screen and (max-width: 800px) {
+/** responsive **/
+
+@media #{$sm} {
 
 	table, thead, tbody, th, td, tr {
 		display: block;
 	}
+
 	thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	td:before {
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		padding-right: 10px;
-		white-space: nowrap;
-		text-align: left;
+
+	td {
+		padding: 0;
+
+		&:before {
+			position: absolute;
+			top: 6px;
+			left: 6px;
+			padding-right: 10px;
+			white-space: nowrap;
+			text-align: left;
+		}
 	}
+	
 	.table-title, .row-title {
 		padding-left: 0;
 	}
 	.data-sect { display: none; }
-}
-
-/** responsive **/
-
-@media screen and (max-width: 800px) {
 
 	.dropdown {
 		width: 100%;
 	}
 
-	.img-area * img {
-		max-width: 40%;
-		margin: 20% auto;
-		border: 4px inset #bbb;
-	}
-
-	.gallery img {
-		width: 100%;
-	}
-
-	td {
-		padding: 0;
-	}
 }
