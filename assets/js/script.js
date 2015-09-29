@@ -26,8 +26,7 @@ $(document).ready(function() {
 
 	$('.gallery p').addClass('row');
 	$('.gallery p img').wrap('<div class="col-xs-12 col-sm-6" />');
-	// $('.gallery p img').addClass('pure-u-1');
-
+	$('.gallery p img').addClass('img-responsive');
 
 /* svg */
 	$('img.svg').each(function(){

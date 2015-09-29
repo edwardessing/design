@@ -95,6 +95,10 @@ html, body {
 
 body {
 	font-size: 100%;
+
+	main.container {
+		max-width: 1200px;
+	}
 }
 
 .svg {
@@ -222,25 +226,16 @@ article {
 }
 
 .gallery {
-	margin: 20px auto 0;
+	margin: 40px auto 0;
 
 	img {
-		width: 97%;
-		max-width: 800px;
-		padding: 2.5% 0;
+		padding: 10px 0;
 	}
 }
 
-.gallery p div:nth-child(odd) {
-	text-align: left;
-}
-.gallery p div:nth-child(even) {
-	text-align: right !important;
-}
-
 .post-nav {
-	display: inline-block;
-	width: 100%;
+	// display: inline-block;
+	// width: 100%;
 	padding: 20px 0 0 0;
 	
 	a {
@@ -263,8 +258,8 @@ article {
 .return {
 	text-align: center;
 }
+
 .next {
-	float: right;
 	text-align: right;
 }
 

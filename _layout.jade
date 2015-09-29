@@ -17,7 +17,7 @@ html(lang='en')
 
 	body(class="#{ current.path.join('-') }")
 		!= partial("_partials/nav")
-		.container
+		main.container
 			if current.path[0] === "index"
 				.row.home-thumbs
 					.col-sm-12.col-md-6.bio
