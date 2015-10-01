@@ -141,6 +141,18 @@ body {
 
 /* container */
 
+.container {
+	display:table;
+	width: 100%;
+}
+.row {
+	display: table-row;
+	height: 100%;
+}
+div[class^='col-'], div[class*='col-'] {
+	display: table-cell;
+}
+
 article {
 	min-height: 100%;
 }
@@ -182,7 +194,6 @@ article {
 }
 
 .post-head a {
-	/*text-decoration: none !important;*/
 	font-size: 20px;
 	padding-right: 15px;
 	color: black;
@@ -234,8 +245,6 @@ article {
 }
 
 .post-nav {
-	// display: inline-block;
-	// width: 100%;
 	padding: 40px 0 0 0;
 	
 	a {
