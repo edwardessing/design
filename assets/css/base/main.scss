@@ -149,9 +149,9 @@ body {
 	display: table-row;
 	height: 100%;
 }
-div[class^='col-'], div[class*='col-'] {
-	display: table-cell;
-}
+// div[class^='col-'], div[class*='col-'] {
+// 	display: table-cell;
+// }
 
 article {
 	min-height: 100%;
