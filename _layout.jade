@@ -24,7 +24,7 @@ html(lang='en')
 						h1 Edward Essing
 					for post, slug in public.work._data
 						if post.layout !== false
-							a.home-thumb.col-xs-12.col-sm-4.col-md-3(href="/work/#{ slug }" style="background-image: url(/work/img/#{ img= post.hero })")
+							a.home-thumb.col-xs-6.col-sm-4.col-md-3(href="/work/#{ slug }" style="background-image: url(/work/img/#{ img= post.hero })")
 				!= yield
 			else
 				if current.path[0] === "work"
