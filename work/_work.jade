@@ -20,5 +20,6 @@ section.work.row
 	.data.col-xs-12.col-md-10
 		p.info= info
 
-	.gallery.row= yield
+	.gallery.row
+		!= yield
 != partial('../_partials/post-nav')
