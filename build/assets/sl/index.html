@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>skylight</title>
+  <meta charset="utf-8">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="x">
+  <meta name="apple-mobile-web-app-title" content="skylight">
+  <meta name="keywords" content="x">
+  <meta name="author" content="ED/ES">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- menu -->
+
+  <div id="menu">
+    <div class="link">
+      <h2>menu</h2>
+    </div>
+    <div class="dropdown">
+      <ul>
+        <h3>controls</h3>
+        <li>
+          <a class="swt hut-but" onclick="hud()">hud</a>
+        </li>
+        <li>
+          <a class="swt tilt" onclick="tiltToggle()" data-on="false">tilt</a>
+        </li>
+        <li>
+          <a class="swt reset" onclick="reset();">reset</a>
+        </li>
+      </ul>
+      <ul>
+        <h3>backdrop</h3>
+        <li>
+          <label for="styleSwitcher"></label>
+          <div id="styleSwitch">
+            <button class="bg" value="b1" selected="selected">1</button>
+            <button class="bg" value="b2">2</button>
+            <button class="bg" value="b3">3</button>
+            <button class="bg" value="b4">4</button>
+            <button class="bg" value="b5">5</button>
+            <br>
+          </div>
+        </li>
+          <br>
+        <a class="menu-but" href="http://edwardessing.com/" target="_blank">edwardessing.com/</a>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content -->
+
+  <div class="sky-container">
+
+    <!-- bg -->
+
+    <div class="landing"></div>
+
+    <!-- pit -->
+    
+    <div class="hud">
+      <div class="pit scr"></div>
+      <div class="pit jaw"></div>
+
+      <div class="line hori"></div>
+      <div class="line vert"></div>
+
+      <div class="stats">
+        <div class="status">0,0</div>
+        <div class="lr"></div>
+        <div class="ud"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

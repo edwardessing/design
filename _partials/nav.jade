@@ -1,9 +1,0 @@
-.menu-link
-	#menu
-		a.link
-		.dropdown
-			ul.post-list
-				for post, slug in public.work._data
-					li.list-link(class="#{ current.source == '/work/' ? 'active-text' : '' }")
-						a(href="/work/#{ slug }")= post.title
-					!= partial("work/" + slug)

@@ -1,0 +1,18 @@
+.project-nav.row
+	.prev.col-xs-4
+		if previous
+			a(href='/' + previous.path, title="#{ previous.title }")
+				span ←
+				span= previous.title
+				//- span #{ prev.title }
+
+	.return.col-xs-4
+		a(href='/')
+			span home
+
+	.next.col-xs-4
+		if next
+			a(href='/' + next.path, title="#{ next.title }")
+				span= next.title
+				span →
+				//- span #{ next.title }

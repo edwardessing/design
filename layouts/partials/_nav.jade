@@ -1,0 +1,10 @@
+block link
+	-var selected = '';
+
+#menu
+	a.menu-link.link.col-var
+	.dropdown
+		ul.project-list
+			li: a(href='/') Home
+			each project in projects
+				li: a(href='/' + project.path)= project.title
