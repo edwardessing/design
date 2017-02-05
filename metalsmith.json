@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 {
+=======
+{", "
+>>>>>>> origin/master
 	"source": "src",
 	"destination": "build",
 	"plugins": {
 		"metalsmith-define": {
+<<<<<<< HEAD
+=======
+			"moment": "require('moment')"
+		},
+>>>>>>> origin/master
 			"blog": {
 				"uri": "http://edwardessing.com",
 				"title": "EDES",
@@ -12,6 +21,7 @@
 				"uri": "http://edwardessing.com",
 				"name": "Edward Essing"
 			},
+<<<<<<< HEAD
 			"moment": "require('moment')"
 		},
 		"metalsmith-static": {
@@ -19,6 +29,14 @@
 			"dest": "assets"
 		},
 		"metalsmith-project-images": {
+=======
+		},
+		"metalsmith-asset": {
+			"src": "assets",
+			"dest": "assets"
+		}
+		"metalsmith-images" {
+>>>>>>> origin/master
 			"pattern": "projects/**/*.md",
 			"imagesDirectory": "images"
 		},
@@ -30,6 +48,25 @@
 				"pattern": "projects/**/*.md",
 				"sortBy": "date",
 				"reverse": true
+<<<<<<< HEAD
+=======
+			},
+			"recentWork": {
+				"pattern": "work/*.md",
+				"sortBy": "number",
+				"reverse": true,
+				"limit": 6
+			},
+		"metalsmith-pagination": {
+			"collections.works": {
+				"perPage": 6,
+				"first": "work/index.html",
+				"layout": "work.jade",
+				"path": "work/:num/index.html",
+				"noPageOne": true,
+				"pageMetadata": {
+				}
+>>>>>>> origin/master
 			}
 		},
 		"metalsmith-markdown": {

@@ -79,6 +79,10 @@ metalsmith(__dirname)
 			return originalPath.replace('scss', 'css');
 		}
 	}))
+	.use(concat({
+		files: 'css/base/**/*.css',
+		output: 'css/app.css'
+	}))
 	.use(autoprefixer())
 	.use(uglify({
 		order: ['js/jquery.min.js', 'js/*.js'],
