@@ -1,0 +1,51 @@
+{
+	"source": "src",
+	"destination": "build",
+	"plugins": {
+		"metalsmith-define": {
+			"blog": {
+				"uri": "http://edwardessing.com",
+				"title": "EDES",
+				"description": "EDES"
+			},
+			"owner": {
+				"uri": "http://edwardessing.com",
+				"name": "Edward Essing"
+			},
+			"moment": "require('moment')"
+		},
+		"metalsmith-static": {
+			"src": "assets",
+			"dest": "assets"
+		},
+		"metalsmith-project-images": {
+			"pattern": "projects/**/*.md",
+			"imagesDirectory": "images"
+		},
+		"metalsmith-collections": {
+			"pages": {
+				"pattern": "*.md"
+			},
+			"projects": {
+				"pattern": "projects/**/*.md",
+				"sortBy": "date",
+				"reverse": true
+			}
+		},
+		"metalsmith-markdown": {
+			"gfm": true,
+			"tables": true
+		},
+		"metalsmith-permalinks": {
+			"pattern": "./projects/:title",
+			"relative": true
+		},
+		"metalsmith-layouts": {
+			"engine": "jade",
+			"directory": "layouts",
+			"partials": "partials",
+			"default": "project.jade",
+			"pattern": "**/*.html"
+		}
+	}
+}

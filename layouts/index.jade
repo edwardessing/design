@@ -5,4 +5,5 @@ block content
 		.col-sm-12.col-md-6.bio
 			h1 Edward Essing
 		each project in projects
-			a.home-thumb.col-xs-12.col-sm-4.col-md-3(href='/' + project.path style="background-image:url(/#{project.path}/icon.jpg)")
+			a.home-thumb.col-xs-12.col-sm-3.col-md-3(href='/' + project.path)
+				img.img-responsive(src='/#{project.path}/icon.jpg')
