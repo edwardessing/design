@@ -48,10 +48,10 @@
 			"relative": true
 		},
 		"metalsmith-layouts": {
-			"engine": "jade",
+			"engine": "pug",
 			"directory": "layouts",
 			"partials": "partials",
-			"default": "project.jade",
+			"default": "project.pug",
 			"pattern": "**/*.html"
 		}
 	}
