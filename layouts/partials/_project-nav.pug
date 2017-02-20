@@ -3,16 +3,15 @@
 		if previous
 			a(href='/' + previous.path, title="#{ previous.title }")
 				span ←
-				span= previous.title
+				= previous.title
 				//- span #{ prev.title }
 
 	.return.col-xs-4
-		a(href='/')
-			span home
+		a(href='/') home
 
 	.next.col-xs-4
 		if next
 			a(href='/' + next.path, title="#{ next.title }")
-				span= next.title
+				= next.title
 				span →
 				//- span #{ next.title }

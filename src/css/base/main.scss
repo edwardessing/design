@@ -8,90 +8,90 @@
 
 /** * **/
 
-::selection {
-	background: black;
-	color: white;
-	text-shadow:none;
-}
-
-* {
-	font-weight: 100;
-	font-variant-ligatures: contextual no-historical-ligatures common-ligatures;
-	border-color: rgba(0,0,0,0.1);
-	outline: none !important;
-}
-
-* > a {
-	cursor: pointer;
-	color: white;
-
-	&.hover {
-		color: black;
-	}
-}
-
-*, p, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Helvetica', sans-serif;
-	line-height: 150%;
-}
-
-hr {
-	border: none;
-	border-top: 1px solid;
-	border-color: rgba(0,0,0,0.5);
-}
-
-p, footer div ul * {
-	font-size: 12px;
-	letter-spacing: 0.025em;
-	color: black;
-}
-
-h1 {
-	font-size: 26px;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	margin: 0 0 20px;
-}
-
-h2 {
-	font-size: 18px;
-	letter-spacing: 1px;
-	color: black;
-	text-transform: capitalize;
-}
-
-h3 {
-	font-size: 20px;
-	letter-spacing: 2px;
-	text-transform: capitalize;
-	color: white;
-}
-
-h4 {
-	font-size: 16px;
-	letter-spacing: 2px;
-	text-transform: capitalize;
-	color: white;
-}
-
-/** main **/
-
-html {
-	box-sizing: border-box;
-    overflow: auto;
-}
-
-html, body {
-	background: rgb(185, 185, 175);
+//@extend-elements
+//original selectors
+//html, body
+%extend_1 {
+	background: #e4e4de;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	font-size: 100%;
+//original selectors
+//.table-title, .row-title
+%extend_2 {
+	background: transparent !important;
+	outline: 0;
+	font-size: 1em;
+}
 
+::selection {
+	background: black;
+	color: white;
+	text-shadow: none;
+}
+* {
+	font-variant-ligatures: contextual no-historical-ligatures common-ligatures;
+	color: #635c5c;
+	border-color: rgba(0, 0, 0, 0.1);
+	outline: none !important;
+	font-family: Times, serif !important;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 150%;
+}
+a {
+	cursor: pointer;
+	color: black !important;
+	&:hover {
+		color: red !important;
+		text-decoration: none;
+	}
+	&:active {
+		color: red !important;
+		text-decoration: none;
+	}
+	&:focus {
+		color: red !important;
+		text-decoration: none;
+	}
+}
+p {
+	font-size: 14px;
+}
+h1 {
+	letter-spacing: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+h2 {
+	letter-spacing: 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+h3 {
+	letter-spacing: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+h4 {
+	font-size: 18px;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.5);
+}
+html {
+	box-sizing: border-box;
+	overflow: auto;
+	@extend %extend_1;
+}
+body {
+	@extend %extend_1;
+	font-size: 100%;
 	#main.container {
 		max-width: 1200px;
 		margin-top: 5%;
@@ -99,191 +99,128 @@ body {
 		z-index: 9;
 	}
 }
-
 .svg {
 	fill: white;
 }
-
 .project-list {
 	padding: 0;
 	text-align: center;
 	list-style: none;
 	overflow: scroll;
-
 	li {
 		padding: 6px 0;
 	}
 }
-
-.list-link a {
-	width: 100%;
-	padding: 10px 4px;
-	font-size: 14px;
-	line-height: 125%;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-
-	&:hover {
-		color: rgb(190, 200, 190) !important;
-	}
-}
-
-/* container */
-
 .container {
 	padding: 0 20px;
 }
-
-/* home */
-
 .bio {
 	padding-bottom: 50px;
 }
-
 .home-list {
 	color: inherit;
 }
-
 .home-thumb {
 	background-size: cover;
 	background-position: 50% 50%;
-	height: 240px;
-
-	&:hover {
-		box-shadow: 0px 0px 100px rgba(0,0,0,0.75);
+	padding: 0 !important;
+	img:hover {
+		box-shadow: 0 0 100px rgba(0, 0, 0, 0.75) !important;
+		z-index: 99 !important;
 	}
 }
-
-/* work */
-
 .work {
 	list-style: none;
 	color: inherit;
 }
-
-.project-head a {
-	font-size: 20px;
-	padding-right: 15px;
-	color: black;
-
-	&:hover {
-		color: white;
-	}
-}
-
-.data * {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-}
-
 .site-link {
 	padding: 10px 0;
+	letter-spacing: 3px;
+	text-transform: uppercase;
 }
-
-.info {
-	padding: 0 auto;
+.data {
+	text-transform: capitalize;
 }
-
 .gallery {
 	margin-top: 40px;
-
 	img {
 		padding: 15px 0;
 	}
 }
-
 .project-nav {
-	padding: 40px 0 0 0;
-
+	padding: 40px 0 0;
 	a {
 		display: block;
 		width: 100%;
 		padding: 8px 0;
-		color: white;
-		font-size: 16px;
-		letter-spacing: 2px;
 		text-transform: capitalize;
-
-		&:hover {
-			color: black;
-			cursor: pointer;
-		}
 	}
-
 	.return {
 		text-align: center;
 	}
-
 	.next {
 		text-align: right;
 	}
 }
-
 table {
 	width: 100%;
-	margin-top: 10px;
 	border-collapse: collapse;
 }
-
-.table-title, .row-title {
-	background: transparent !important;
-	outline: 0;
-	font-size: 1em;
+.table-title {
+	@extend %extend_2;
 }
-
-.tg  {
-	border-collapse:collapse;
-	border-spacing:0;
+.row-title {
+	@extend %extend_2;
 }
-
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 tr {
 	padding: 10px 0;
-	color: black;
-	border-bottom: solid 1px rgba(0,0,0,0.1);
+	color: #635c5c;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 	margin: -1px 0;
 }
-
 td {
 	padding: 4px 4px 4px 0;
-	font-size: 14px;
-	letter-spacing: 1px;
 	text-align: left;
-
-	&:nth-child(4) {
+	&:nth-last-child(1) {
 		text-align: right;
 	}
-
+	&:nth-last-child(2) {
+		margin-bottom: 10px;
+	}
 	a {
 		text-decoration: none;
-		color: white !important;
-
+		color: black !important;
 		&:hover {
-			color: black !important;
+			color: red !important;
 		}
 	}
 }
-
-/** responsive **/
-
 $sm: "screen and (max-width : 768px)";
-
 @media #{$sm} {
-
-	table, thead, tbody, th, td, tr {
+	table {
 		display: block;
 	}
-
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
+	thead {
+		display: block;
+		tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
 	}
-
+	tbody {
+		display: block;
+	}
+	th {
+		display: block;
+	}
 	td {
+		display: block;
 		padding: 0;
-
 		&:before {
 			position: absolute;
 			top: 6px;
@@ -293,14 +230,38 @@ $sm: "screen and (max-width : 768px)";
 			text-align: left;
 		}
 	}
-
-	.table-title, .row-title {
+	tr {
+		display: block;
+	}
+	.table-title {
 		padding-left: 0;
 	}
-	.data-sect { display: none; }
-
+	.row-title {
+		padding-left: 0;
+	}
+	.data-sect {
+		display: none;
+	}
 	.dropdown {
 		width: 100%;
 	}
-
+}
+footer div ul * {
+	font-weight: normal;
+}
+.list-link a {
+	width: 100%;
+	padding: 10px 4px;
+	line-height: 125%;
+	text-transform: capitalize;
+}
+.project-head a {
+	padding-right: 15px;
+}
+.data * {
+	margin: 0;
+	padding: 0 10px 0 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
 }

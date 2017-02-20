@@ -10,16 +10,14 @@ block content
 		.row
 			.col-md-6
 				.col-xs-12.col-md-2.data
-					p &nbsp;
 					p(style='font-size:12px;')= date
 					p(style='font-size:12px; margin-top:10px;')= tag
-
-					if link
-						h2.site-link
-							a(href=link target='_blank') Link
-					else
+					br
 
 				.col-xs-12.col-md-10.info(style='margin-top:0')
+					if link
+						a.site-link(href=link target='_blank') Link
+					else
 					p!= contents
 
 	.gallery.row

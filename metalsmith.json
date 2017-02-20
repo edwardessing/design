@@ -34,7 +34,7 @@
 			},
 			"recentProject": {
 				"pattern": "project/*.md",
-				"sortBy": "number",
+				"sortBy": "date",
 				"reverse": true,
 				"limit": 6
 			}
