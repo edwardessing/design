@@ -42,9 +42,12 @@
 	line-height: 150%;
 }
 a {
+	background: rgba(yellow,0.1) !important;
 	cursor: pointer;
 	color: black !important;
+	padding: 0 !important;
 	&:hover {
+		background: rgba(red,0.1) !important;
 		color: red !important;
 		text-decoration: none;
 	}
