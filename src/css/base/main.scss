@@ -59,6 +59,12 @@ a {
 		color: red !important;
 		text-decoration: none;
 	}
+
+	&.img {
+		display: inline-table;
+		background: none !important;
+	    padding: 0 15px !important;
+	}
 }
 p {
 	font-size: 14px;

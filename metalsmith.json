@@ -45,7 +45,7 @@
 		},
 		"metalsmith-permalinks": {
 			"pattern": "./projects/:title",
-			"relative": true
+			"relative": false
 		},
 		"metalsmith-layouts": {
 			"engine": "pug",
