@@ -1,9 +1,24 @@
 extends ./partials/_layout
 
 block content
-	.row.home-thumbs
-		.col-sm-12.col-md-6.bio
+	//- .row.home-thumbs
+	//- 	.col-sm-12.col-md-6.bio
+	//- 		h1 Edward Essing
+	//- 	each project in projects
+	//- 		a.home-thumb.col-xs-12.col-sm-3.col-md-3(href='/' + project.path)
+	//- 			img.img-responsive(src='/' + project.path + '/icon.jpg')
+	.row
+		.col-sm-12
 			h1 Edward Essing
-		each project in projects
-			a.home-thumb.col-xs-12.col-sm-3.col-md-3(href='/' + project.path)
-				img.img-responsive(src='/' + project.path + '/icon.jpg')
+
+	.row
+		a.col-sm-12.col-md-6(href='http://art.edwardessing.com' style='display:block; padding:15px !important; text-align:center; cursor:pointer;')
+			h3 Art
+			img.img-responsive(src='img/art-thumb.jpg' style='margin:0 auto;')
+
+		a.col-sm-12.col-md-6(href='/dd.html' style='display:block; padding:15px !important; text-align:center; cursor:pointer;')
+			h3 Design / Development
+			img.img-responsive(src='img/dd-thumb.jpg' style='margin:0 auto;')
+
+block style
+	style.
