@@ -12,7 +12,7 @@
 //original selectors
 //html, body
 %extend_1 {
-	background: #e4e4de;
+	background: #e4e4e4;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -36,18 +36,17 @@
 	color: #635c5c;
 	border-color: rgba(0, 0, 0, 0.1);
 	outline: none !important;
-	font-family: Times, serif !important;
+	font-family: Arial, sans-serif !important;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 150%;
 }
 a {
-	background: rgba(yellow,0.1) !important;
+	// background: rgba(yellow,0.1) !important;
 	cursor: pointer;
-	color: black !important;
+	color: red !important;
 	padding: 0 !important;
 	&:hover {
-		background: rgba(red,0.1) !important;
 		color: red !important;
 		text-decoration: none;
 	}
@@ -70,17 +69,17 @@ p {
 	font-size: 14px;
 }
 h1 {
-	letter-spacing: 5px;
+	letter-spacing: 1px;
 	font-size: 18px;
 	text-transform: uppercase;
 }
 h2 {
-	letter-spacing: 5px;
+	letter-spacing: 1px;
 	font-size: 15px;
 	text-transform: uppercase;
 }
 h3 {
-	letter-spacing: 5px;
+	letter-spacing: 1px;
 	font-size: 13px;
 	text-transform: uppercase;
 }

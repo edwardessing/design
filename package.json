@@ -4,7 +4,7 @@
   "description": "Edward Essing",
   "license": "FTP",
   "private": true,
-  "author": "Edward Essing <edwardessing@gmail.com> (http://www.design.edwardessing.com)",
+  "author": "Edward Essing <edwardessing@gmail.com> (http://www.edwardessing.com)",
   "main": "build/",
   "dependencies": {
     "autoprefixer": "^5.2.0",

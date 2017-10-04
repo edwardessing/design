@@ -1,7 +1,6 @@
 prose:
     # Configurations ...
   rooturl: 'src'
-  siteurl: 'http://www.edwardessing.com/'
   metadata:
     src:
       - name: 'title'
