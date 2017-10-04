@@ -4,4 +4,4 @@ node_js:
 script:
   - npm run build
 after_success:
-  - surge --project ./build/ --domain edwardessing.com
+  - surge --project ./build/ --domain design.edwardessing.com

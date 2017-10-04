@@ -4,12 +4,12 @@
 	"plugins": {
 		"metalsmith-define": {
 			"blog": {
-				"uri": "http://edwardessing.com",
+				"uri": "http://design.edwardessing.com",
 				"title": "EDES",
 				"description": "EDES"
 			},
 			"owner": {
-				"uri": "http://edwardessing.com",
+				"uri": "http://design.edwardessing.com",
 				"name": "Edward Essing"
 			},
 			"moment": "require('moment')"
